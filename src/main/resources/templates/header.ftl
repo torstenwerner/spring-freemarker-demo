@@ -1,0 +1,1 @@
+<h1>Hello Freemarker and Spring Boot!</h1>

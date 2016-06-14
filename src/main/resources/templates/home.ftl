@@ -1,3 +1,5 @@
+<#import "/spring.ftl" as spring>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,11 @@
     <title>Hello Freemarker</title>
 </head>
 <body>
-<h1>Hello Freemarker and Spring Boot</h1>
-${message}
+<#include "header.ftl">
+<p>${message}</p>
+<p>An Url:</p>
+<pre>
+    <@spring.url '/settings'/>
+</pre>
 </body>
 </html>
